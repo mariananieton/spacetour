@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpaceTour - Contato</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./css/contato.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="cabecalho">
+            <a href="./index.html">
+                <img src="./logo-spacetours.png" alt="Logo SpaceTour">
+           </a>
+            <nav class="menu">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Pacotes</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="titulo">
+            <h1>Formulário de Contato</h1>
+        </section>
+        <section class="formulario">
+            <form action="./index.html" method="get">
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome"> <br>
+
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite o seu sobrenome"> <br>
+
+                <input type="email" name="email" id="email" placeholder="Digite o seu email"> <br>
+
+                <input oninput="mascara(this)" type="text" name="cpf" id="cpf" placeholder="Digite seu CPF"> <br> <br>
+
+                <span>Gênero</span> <br>
+
+                <input type="radio" name="genero" id="masculino" checked>
+                <label for="masculino">Masculino</label> <br>
+                <input type="radio" name="genero" id="feminino">
+                <label for="feminino">Feminino</label> <br>
+                <input type="radio" name="genero" id="outro">
+                <label for="outro">Outro</label> <br> <br>
+
+                <span>Data de nascimento</span> <br>
+
+                <input type="date" name="dataDeNascimento" id="dataDeNascimento"> <br> <br>
+                
+                <textarea name="motivacao" id="motivacao" cols="30" rows="10" placeholder="“Qual a sua motivação para a viagem?"></textarea>
+
+                <br> <br>
+                <button onclick="validaForm()" id="enviar">Enviar</button>
+            </form>
+        </section>
+        <footer class="rodape">
+            <p>2022.Design Responsivo.</p>
+            <small class="creditos">Criado por <a href="#">Andrea Madureira</a>, <a href="#">Karina Ferreira</a>,
+                 <a href="#">Joelma Takeuchi</a>, <a href="#"> Mariana Borges</a></small>
+        </footer>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
