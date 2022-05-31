@@ -1,0 +1,39 @@
+.titulo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo h1{
+    font-size: 22px;
+    color: #999999;
+    padding: 20px 0px;
+}
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario form{
+    width: 400px;
+    background-color: #23232310;
+    font-size: 16px;
+    padding: 30px;
+}
+#nome,#sobrenome,#email,#cpf,#enviar,#motivacao{
+    width: 100%;
+    margin: 5px 0px;
+    padding: 8px 0 8px 8px;
+}
+#enviar{
+    cursor: pointer;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+#enviar:hover{
+    background-color: #004b9b;
+}
